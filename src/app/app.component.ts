@@ -17,13 +17,16 @@ export class AppComponent implements OnInit, OnChanges{
     this.data = this.title;
     console.log('this.data', this.data);
     console.log('this.red', this.red.june);
-    console.log('Red', JSON.parse(this.dataobject));
+    if (this.dataobject) {
+       console.log('Red', JSON.parse(this.dataobject));
+    }
   }
 
   ngOnChanges(change: SimpleChanges): void {
     console.log('change', change);
     this.title = change?.title ? change?.title?.currentValue : this.title;
     this.token = change?.token ? change?.token?.currentValue : this.token;
+    this.dataobject = change?.dataobject ? change?.dataobject?.currentValue : this.dataobject;
     console.log('title 2', this.title);
     console.log('token 2', this.token);
   }
