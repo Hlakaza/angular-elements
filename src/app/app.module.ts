@@ -16,5 +16,6 @@ export class AppModule {
     const element = createCustomElement(AppComponent, { injector });
     customElements.define('caculator-app', element);
   }
-  ngDoBootstrap() {}
+  ngDoBootstrap(): void {}
+
 }
