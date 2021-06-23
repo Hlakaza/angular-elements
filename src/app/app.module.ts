@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
   imports: [BrowserModule],
   providers: [],
   // bootstrap: [AppComponent],
-  entryComponents: [AppComponent],
+  // entryComponents: [AppComponent],
 })
 export class AppModule {
   constructor(private injector: Injector) {

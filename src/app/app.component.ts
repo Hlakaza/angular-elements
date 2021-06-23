@@ -1,7 +1,7 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
-  selector: 'caculator-app',
+  selector: 'app-caculator',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
